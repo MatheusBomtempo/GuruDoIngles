@@ -49,7 +49,7 @@ const FAQComponent = () => {
     {
       question: 'Caso eu não esteja pronto após o curso preciso comprar o curso novamente?',
       answer:
-        'Para os alunos do Fast Certification que se dedicaram e cumpriram todo o cronograma do curso, porém não estejam 100% preparados para a prova, o Guru disponibilizará um mega desconto na renovação do plano seguindo um modelo de assinatura mensal por um valor especial.',
+        'Para os alunos do Fast Certification que se dedicarem e cumprirem todo o cronograma do curso, porém não estejam 100% preparados para a prova, o Guru disponibilizará um mega desconto na renovação do plano seguindo um modelo de assinatura mensal por um valor especial.',
     },
   ];
 

@@ -213,8 +213,8 @@ const Venda = () => {
                   Você <span>NÃO ESTÁ SOZINHO(A)</span> nessa!
                 </h2>
                 <p>
-                  O Cronograma Do Guru Abrange Todas as Competências Da
-                  Certificação Semana a Semana Para Você{' '}
+                  O cronograma do guru abrange todas as competências da
+                  certificação semana a semana para você{' '}
                   <span className="vermei">
                     NÃO TER QUE SE PREOCUPAR EM ORGANIZAR SEUS ESTUDOS.
                   </span>
@@ -330,11 +330,11 @@ const Venda = () => {
                     Use of English <span className="vermei">Descomplicado</span>
                   </h1>
                   <p className="zul ">
-                    O Guru Preparou Um Caderno De Exercícios Com Mais De 1000
-                    Questões No Modelo Da Prova. Essas Questões São De Use of
-                    English, O Terror Da Galera. Nesse Curso Ele Resolveu Todos
-                    Os Exercícios Para Que Você Possa Consultar Assim Que Acabar
-                    De Fazer E Não Deixar Nenhuma Dúvida Para Depois.
+                    O guru preparou um caderno de exercícios com mais de 1000
+                    questões no modelo da prova. essas questões são de use of
+                    english, o terror da galera. Nesse curso ele resolveu todos
+                    os exercícios para que você possa consultar assim que acabar
+                    de fazer e não deixar nenhuma dúvida para depois.
                   </p>
                 </div>
                 <div className="curDir">
@@ -379,12 +379,12 @@ const Venda = () => {
                     Speaking<span className="vermei"> at Home</span>
                   </h1>
                   <p className="zul ">
-                    Aqui Você Vai Aprender a Falar Inglês Exatamente No Modelo
-                    Da Prova. É Como Na Auto-escola, Não Basta Saber Dirigir,
-                    Você Tem Que Saber Dirigir Do Jeito Que Eles Gostam Para
-                    Passar. A Cada Semana Você Terá Várias Atividades Para
-                    Treinar, E Nas Aulas O Guru Vai Passar Os Macetes Que
-                    Levaram Alguns De Seus Alunos a Gabaritarem a Prova Oral.
+                    Aqui você vai aprender a falar inglês exatamente no modelo
+                    da prova. é como na auto-escola, não basta saber dirigir,
+                    você tem que saber dirigir do jeito que eles gostam para
+                    passar. A cada semana você terá várias atividades para
+                    treinar, e nas aulas o guru vai passar os macetes que
+                    levaram alguns de seus alunos a gabaritarem a prova oral.
                   </p>
                 </div>
                 <div className="curDir">
@@ -430,7 +430,7 @@ const Venda = () => {
               <div className="boxbox">
                 <div className="curEsq">
                   <h1 className="mb-4">
-                    Easy<span className="vermei">Writing</span>
+                    Easy <span className="vermei">Writing</span>
                   </h1>
                   <p className="zul">
                     Esse aqui é o curso mais chato, porém é tão importante
@@ -450,7 +450,7 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-              <div className="esqCla cl" onMouseMove={handleMouseMove4}>
+                <div className="esqCla cl" onMouseMove={handleMouseMove4}>
                   <video ref={videoRef4} poster={poster4} onClick={togglePlay4}>
                     <source src={play5} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
@@ -537,16 +537,18 @@ const Venda = () => {
 
           <div className="bg-az">
             <div className="titulo2 mb-14 pt-8">
-              <h1 className="branco ">
-                Assine <span className="marelo">aqui!</span>
-              </h1>
+              <a href="https://pay.kiwify.com.br/pyOx7eu">
+                <h1 className="branco ">
+                  Assine <span className="marelo">aqui!</span>
+                </h1>
+              </a>
             </div>
 
             <div className="pricee mb-20">
               <Prices></Prices>
             </div>
 
-            <div className='whiteBg' id='#social'>
+            <div className="whiteBg" id="#social">
               <Social></Social>
             </div>
 

@@ -13,12 +13,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 
 const Prices = () => {
-  const navigate = useNavigate();
-
-  const kiwi = () => {
-    navigate('https://pay.kiwify.com.br/pyOx7eu');
-  };
-
+  
   return (
     <div className="cardOut ">
       <h1 className="titulo3 mb-4 mt-4">
