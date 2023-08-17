@@ -434,7 +434,7 @@ const Venda = () => {
                   </h1>
                   <p className="zul">
                     Esse aqui é o curso mais chato, porém é tão importante
-                    quanto todos os outros (emoji de riso). aqui o guru te
+                    quanto todos os outros 😂. aqui o guru te
                     ensina como escrever todos os possíveis modelos da prova,
                     explicando parágrafo por parágrafo, até que você consiga
                     escrever seus textos sozinho(a). e sim, o guru também
