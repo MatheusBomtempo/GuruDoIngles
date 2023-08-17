@@ -1,0 +1,34 @@
+.cardOut {
+    background-color: #fff;
+    border-radius: 2rem;
+ }
+
+
+ .v .cardCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    
+ }
+
+ .v .cardCont .btnn{
+    background-color: #FFC700;
+    border-radius: 0 3rem 3rem 0;
+    width: 100%;
+ }
+
+ .botao1{
+   width: 100%;
+ }
+
+.botFilho button{
+   width: 100%;
+}
+
+
+
+ .bonusIco{
+    font-size: .1rem;
+ }

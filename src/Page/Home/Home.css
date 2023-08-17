@@ -1,0 +1,186 @@
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #532523;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+  background-color: #00113d ;
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+  }
+ 
+  h2{
+    font-size: 2rem;
+  }
+ 
+  h3{
+    font-size: 1.3rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+  }
+ 
+  h4{
+    font-size: 2rem;
+  }
+ 
+  p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: .55rem;
+  }
+
+  button{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  
+.blueblabgg{
+  background-color: #081B4B;
+}
+
+.hero{
+  background: url('../../imgs/raulTeste.png') top right no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+.gridd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  gap: 180px;
+}
+
+.filhosGrid{
+  width: 460px;
+  padding-right: 30px;
+}
+
+
+@media(max-width:1180px){
+  
+  .gridd{
+    gap: 140px;
+  }
+
+  .filhosGrid{
+    width: 80%;
+    padding-right: 0px;
+  }
+
+
+}
+
+/* altura */
+
+
+@media(max-height:700px){
+
+  .filhosGrid p{
+    font-size: 1rem;
+  }
+
+  .filhosGrid h1{
+    font-size: 1.9rem;
+  }
+
+  .filhosGrid h3{
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:760px){
+  .hero{
+    background: url('../../imgs/heroMobile.png') top center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .gridd{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    gap: 0;
+  }
+  
+  .filhosGrid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 0px;
+    padding: 15px;
+  }
+
+  .hero h1{
+    font-size: 1.8rem;
+  }
+ 
+  .hero h3{
+    font-size: 1.1rem;
+  }
+ 
+  .hero h4{
+    font-size: 2rem;
+  }
+ 
+  .hero p{
+    font-size: .6rem;
+  }
+
+  .hero button{
+    font-size: 1rem;
+  }
+
+}

@@ -1,0 +1,997 @@
+.corpo{
+    background-color: #ffff;
+}
+
+/* html{
+    background-color: #ffffff;
+} */
+
+
+#line{
+    border: none; /* Remova a borda padrão */
+    height: 8px; /* Defina a altura da linha */
+    background-color: #FFC700;
+}
+
+.v {
+    height: 80vh;
+    background: #0069FF no-repeat ;
+    border-radius: 0px 0px 63px 63px;
+    z-index: -1000;
+    background-color: #ffff;
+}
+
+.v h1{
+    color: #081B4B;
+}
+
+.v h4{
+    color: #ffff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.v h6{
+    color: #081B4B;
+    font-size: .9rem;
+    font-family: epilogue, sans-serif;
+    font-weight: 800;
+}
+
+.v .vermei{
+    color: #C20004;
+}
+
+.v .marelo{
+    color: #FFD22F;
+}
+
+.v .zul{
+    color: #081B4B;
+}
+
+.v .branco{
+    color: #fff;
+}
+
+
+
+.v .font1{
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 500;
+}
+
+.v .preco{
+    font-size: 3.1rem
+}
+
+
+
+.v .titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v .titulo2 h1{
+    background-color: #EB0C0C;
+    margin: 1rem 0;
+    padding: 1rem 8rem;
+    border-radius: 1rem;
+}
+
+.v .bg-az{
+    background-color: #0069FF;
+}
+
+
+
+.v .bg-az::before{
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+.v p{
+    letter-spacing: normal;
+    color: #ffff;
+}
+
+.v .support{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #0069FF;
+}
+
+.v .support .esq{
+    max-width: 490px;
+}
+
+.v .support .dir{
+    max-width: 500px;
+}
+
+.v .support .dir img{
+    width: 100%;
+}
+
+/* ////////////////////////////// */
+
+.v .acompanha p{
+    letter-spacing: normal;
+    color: #081B4B;
+    font-weight: 600;
+}
+
+.v .acompanha{
+    /* height: 100%; */
+    padding: 4rem 1rem;
+    background-color: #ffff;
+}
+
+.v .acompanha h1{
+    text-align: center;
+
+}
+
+.v .acompanha h2{
+    font-weight: 700;
+    color: #081B4B;
+}
+
+.v .acompanha h2 span{
+    background-color: #C20004; 
+    padding: .4rem;
+    color: #ffff;
+}
+
+.v .acompanhaInner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.v .acompanhaInner h1{
+    text-align: start;
+  }
+
+.v .acompanha .esq{
+    max-width: 490px;
+}
+
+.v .acompanha .dir{
+    max-width: 800px;
+}
+
+.v .acompanha .dir img{
+    width: 100%;
+}
+
+
+/* /////////////////////////////// */
+
+
+.v .plataform{
+    /* border-radius: 58px 58px 0px 0px; */
+    background: #0069FF no-repeat ;
+    z-index: -1000;
+}
+
+.v .plataform h4{
+    font-size: 190%;
+    text-align: center;
+}
+
+.v .plataform .boxx{
+    margin: 0 auto;
+    border-radius: 1.625rem;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 6.650102138519287px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 22.3363094329834px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 41.777610778808594px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    max-width: 603px;
+    padding: 2rem;
+}
+
+.v .plataform .circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 5rem;
+}
+
+.v .plataform .fogPai {
+    position: relative;
+}
+
+.v .plataform .fogPai .fogFilho{
+    position: absolute;
+    top: -36px; left: 300px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+
+.v .plataform .fogPai .fogFilho img{
+    width: 100%;
+}
+
+
+/* /////////////////////////// */
+
+.v .cursos2{
+    background: url('/src/imgs/pattern3.png') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.v .cursos2 .boxCursos{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 4rem; */
+    align-items: center;
+    max-width: 1400px;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #fff;
+    margin: 100px 0;
+    padding: 3rem 6rem;
+    box-shadow:
+    3.4px 3.4px 2.7px rgba(0, 0, 0, 0.016),
+    8.7px 8.7px 6.9px rgba(0, 0, 0, 0.022),
+    17.7px 17.7px 14.2px rgba(0, 0, 0, 0.028),
+    36.5px 36.5px 29.2px rgba(0, 0, 0, 0.034),
+    100px 100px 80px rgba(0, 0, 0, 0.05)
+    ;
+}
+
+.v .cursos2  .curEsq{
+    max-width: 400px;
+    margin-right: 3.5rem;
+}
+
+.v .cursos2  .curDir{
+    max-width: 300px;
+}
+
+.v .cursos2 .boxCursos  img,
+.v .cursos2 .boxCursos1  img
+{
+    border-radius: 1.5rem;
+}
+
+.v .cursos2 .boxCursos1{
+    display: flex;
+    flex-direction: column;
+    /* gap: 4rem; */
+    align-items: center;
+    max-width: 1400px;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #fff;
+    margin: 100px 0;
+    padding: 2rem 4rem;
+    box-shadow:
+    3.4px 3.4px 2.7px rgba(0, 0, 0, 0.016),
+    8.7px 8.7px 6.9px rgba(0, 0, 0, 0.022),
+    17.7px 17.7px 14.2px rgba(0, 0, 0, 0.028),
+    36.5px 36.5px 29.2px rgba(0, 0, 0, 0.034),
+    100px 100px 80px rgba(0, 0, 0, 0.05);
+}
+
+.v .cursos2 .boxCursos1 .clarissabox{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+
+.v .cursos2 .boxCursos1  .cl img{
+    width: 550px;
+    border-radius: 1.5rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.v .cursos2 .boxCursos1  .cl{
+    width: 450px;
+    border-radius: 1.5rem;
+}
+
+
+.v .cursos2 .boxbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.v .boxCursos p,
+.v .boxCursos1 p{
+    letter-spacing: normal;
+    color: #081B4B;
+    font-weight: 700;
+}
+
+
+/* ////////////////////////////////  DEPOIMENTOS*/
+
+.v .tituloDepo{
+    background-color: #C20004;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.v .tituloDepo h1{
+    font-size: 1.8rem;
+}
+
+
+/* ////////////////////////// */
+
+.v .bg-az .pricee h2{
+    font-family: 'Staatliches', sans-serif;
+    color: #081B4B;
+    margin-top: 1rem
+}
+
+.v .bg-az .pricee h4{
+    font-family: 'Epilogue', sans-serif;
+    color: #A5A5A7;
+    font-size: 1rem;
+}
+
+.v .bg-az .pricee h1{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* .v .bg-az{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    margin: 8rem 5%;
+    gap: 3rem;
+    background-color:#FFC700 ;
+} */
+
+ .v .bg-az .pricee  button{
+    background-color: #FFC700;
+
+    border-radius: 0 0 1.8rem 1.8rem ;
+    padding: .6rem 1rem;
+    white-space: nowrap;
+    box-shadow:
+  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
+  30.1px 30.1px 24.1px rgba(0, 0, 0, 0.052),
+  100px 100px 80px rgba(0, 0, 0, 0.08);
+    transition: .2s ;
+} 
+
+.v .bg-az .pricee  button:hover a{
+    font-size: 2.4rem;
+}
+
+
+
+.v .bg-az .pricee button a{
+    color: #081B4B;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-left: .5rem;
+    transition: .2s ;
+}
+ */
+
+
+/* .v .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 3rem;
+    gap: .4rem;
+    border-radius: 2rem;
+    width: 300px;
+    background-color: #fff;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.025),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.036),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.054),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.065),
+    100px 100px 80px rgba(0, 0, 0, 0.09)
+    ;
+}
+
+.v .precoPai{
+    display: flex;
+    align-items: center;
+}
+
+.v .upgrades{
+    display: flex;
+    align-items: center;
+}
+ */
+
+ .v  .pricee{
+    line-height: 1.1;
+ }
+
+
+ .v .pricee .cardOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
+    100px 100px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    margin: 0 auto;
+    width: 850px;
+ }
+
+
+ .v .pricee .cardCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 6rem;
+    text-align: center;
+    padding: 2rem 4rem;
+ }
+
+ .v .pricee .titulo3 span{
+    color: #C20004;
+    font-family: 'Staatliches', sans-serif;
+ }
+
+
+ .v .pricee .cardCont .card2{
+    background-color: #EB0C0C;
+    border-radius: 2.3rem;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
+  100px 100px 80px rgba(0, 0, 0, 0.08)
+;
+ }
+
+ .v .pricee .cardCont .card2 h3{
+    color: #fff;
+    text-align: justify;
+    margin: 1rem;
+ }
+
+ .v .pricee .cardCont .card2 h1{
+    color: #fff;
+    font-weight: 500;
+ }
+
+ .v .pricee .cardCont .card1 h1{
+    font-size: 3.6rem ;
+ }
+
+ .botao1{
+    width: 100%;
+  }
+ 
+ .botFilho {
+    width: 100%;
+ }
+ 
+
+ .bonusIco{
+    font-size: 1.4rem;
+    margin-right: .8rem;
+ }
+
+ .v .pricee .preco{
+    margin: 0;
+ }
+
+
+/* //////////////////// */
+
+
+.v .boxes p{
+    text-align: start;
+}
+
+/* VideoPlayer.css */
+
+  
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    border-radius: 20px;
+  }
+  
+  .v .vid{
+    max-width: 250px;
+    position: relative;
+  }
+
+  .v .celBorder{
+    position: absolute;
+    width: 850px;
+  }
+
+  .v .celBorder img{
+    display: block;
+    width: 950px;
+    height: auto;
+    z-index: 0;
+  }
+
+  .v .vidtablet1 video{
+    border-radius: 35px;
+  }
+
+  @media (min-width: 1161px){
+    .v .support{
+        margin: 0 10%;
+        height: 100%;
+    }
+
+    .v .support p{
+        font-size: 110%;
+    }
+
+    .v .borda{
+        border-radius: 0rem 0rem 3.9375rem 3.9375rem;
+        height: 100%;
+    }
+
+  }
+
+
+
+  @media (max-width: 1160px) {
+    
+    
+    .v .support .esq{
+        max-width: 390px;
+    }
+    
+    .v .support .dir{
+        max-width: 400px;
+    }
+    
+    .v .support .dir img{
+        width: 90%;
+    }
+
+
+    /* ///////// acompanha */
+    .v .acompanha {
+        justify-content: space-between;
+    }
+
+    .v .acompanha .esq{
+        max-width: 370px;
+    }
+
+    .v .acompanha .esq h2{
+        margin-bottom: 1.6rem;
+    }
+    
+    .v .acompanha .dir{
+        max-width: 600px;
+    }
+
+    /* //// cursos */
+
+    .v .cursos2 .boxCursos {
+        padding: 3rem 6rem;
+    }
+
+    .v .cursos2 .curEsq {
+        max-width: 350px;
+        margin-right: 1rem;
+    }
+
+    .v .cursos2 .boxCursos1 {
+    max-width: 1400px;
+    margin: 100px 0;
+    padding: 2rem 4rem;
+}
+
+.v .cursos2 .boxCursos1 .cl img {
+    width: 393px;
+    border-radius: 1.5rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.v .cursos2 .clarissabox .dirCla{
+    width: 393px;
+}
+
+
+  }
+
+
+ 
+
+
+    @media (max-width: 900px){
+        
+    .v .cursos2 .boxCursos {
+        padding: 3rem 2rem;
+    }
+
+    .v .cursos2 .boxCursos1 .esqCla img {
+        width: 315px;
+    }
+    .v .cursos2 .boxCursos1 .dirCla img {
+        width:300px;
+    }
+
+    .v .cursos2 .boxCursos1{
+        margin: 4rem auto;
+    }
+
+    .v .cursos2 .boxCursos1 .cl {
+        width: 304px;
+        border-radius: 1.5rem;
+        /* margin: 0 auto; */
+    }
+
+    .v .cursos2 .boxCursos1 video{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    /* ///////////// preco  */
+
+
+    .v .pricee .cardCont {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3rem;
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    .v .pricee .cardOut {
+        width: 80%;
+    }
+
+    .v .pricee .cardCont .card2 {
+        box-shadow:
+        4.5px 4.5px 3.6px rgba(0, 0, 0, 0.014),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
+        30.1px 30.1px 24.1px rgba(0, 0, 0, 0.026),
+        100px 100px 80px rgba(0, 0, 0, 0.04)
+        ;
+    }
+
+    .v .pricee .cardCont .card2 h1{
+        font-size: 190%;
+     }
+
+     .v .pricee .cardCont .card2 h3{
+        font-size: 120%;
+     }
+
+
+
+     .v .pricee .cardOut h1{
+        font-size: 2.3rem;
+     }
+
+     .v .titulo2 h1{
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+     }
+    
+
+
+        
+    }
+
+
+
+  @media (max-width: 780px){
+    
+    .v .support .esq{
+        max-width: 290px;
+    }
+    
+    .v .support .dir{
+        max-width: 200px;
+    }
+    
+    .v .support .dir img{
+        width: 90%;
+    }
+
+      /* ///////// acompanha */
+
+      .v .acompanha h1 {
+        margin-bottom: 2rem;
+        font-size: 190%;
+      }
+
+      .v .acompanha h2{
+        font-size: 160%;
+      }
+
+      .v .acompanha p{
+        font-size: 100%;
+      }
+      
+    .v .acompanha .esq{
+        max-width: 260px;
+    }
+
+    .v .acompanha .esq h2{
+        margin-bottom: 1rem;
+    }
+    
+    .v .acompanha .dir{
+        max-width: 300px;
+    }
+
+    /* cursos */
+
+
+    .v .cursos2{
+        background: url('/src/imgs/pattern2.png') no-repeat center center / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    
+    .v .cursos2 .boxCursos{
+        flex-direction: column;
+        width: 88%;
+        padding: 1.8rem;
+    }
+
+    .v .cursos2 .boxCursos .curEsq{
+        margin: 0 0 2rem 0;
+        text-align: justify;
+    }
+
+    .v .cursos2 .boxCursos .curEsq h1 {
+        text-align: center;
+    }
+
+    .v .boxbox h1{
+        text-align: center;
+    }
+
+    .v .boxbox p{
+        text-align: justify;
+        word-spacing: .1px;
+    }
+
+    .v .cursos2 .boxbox{
+        flex-direction: column;
+        width: 48%;
+        gap: 2rem;
+    }
+
+    .v .cursos2 .curEsq {
+        max-width: 350px;
+        margin-right: 0;
+    }
+
+    .v .cursos2 .boxCursos1 {
+        margin: 3rem auto;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+
+    
+
+    
+
+  }
+
+
+
+
+
+
+
+
+  @media (max-width: 660px){
+    .v .support{
+        height: auto;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center; */
+        padding: 3rem .4rem;
+        flex-wrap: wrap;
+        
+    }
+
+    .v .support p{
+        font-size: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .v .support h1{
+        font-size: 190%;
+    }
+
+
+    .v .support .esq{
+        max-width: 70%;
+    }
+    
+    .v .support .dir{
+        max-width: 80%;
+    }
+
+     /* ///////// acompanha */
+
+     .v .acompanhaInner {
+       flex-direction: column;
+       justify-content: start;
+      }
+
+      .v .acompanha h2{
+        text-align: center;
+      }
+
+      .v .acompanhaInner h1{
+        text-align: center;
+      }
+
+      .v .acompanha .esq{
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .v .acompanha .dir{
+        max-width: 300px;
+    }
+
+    /* plataform */
+
+    
+    .v .plataform h1{
+        font-size: 180%;
+    }
+
+    .v .plataform h4{
+        font-size: 120%;
+    }
+
+
+    .v .plataform .boxx{
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .v .plataform .circles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        margin-top: 5rem;
+    }
+     
+
+    /* ////////// cusros  */
+
+  
+
+
+  .v .cursos2 .boxCursos1{
+        max-width: auto;
+        width: 94%;
+  }
+
+  .v .cursos2 .curDir {
+    max-width: 409px;
+    width: 170%;
+}
+
+.v .cursos2 .boxCursos1 .clarissabox {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.v .cursos2 .boxCursos img, .v .cursos2 .boxCursos1 img {
+    border-radius: 1.5rem;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.v .cursos2 .boxbox {
+    width: 92%;
+}
+
+.v .cursos2 .boxCursos1 {
+    margin: 3rem auto;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.v .cursos2 .boxCursos1 .cl {
+    width: 417px;
+}
+
+.v .vidtablet1 video{
+    border-radius: 15px;
+}
+
+.v .cursos2 .boxCursos1 video {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* ///////// preco */
+
+.v .pricee .cardCont .card2 h1{
+    font-size: 170%;
+ }
+
+ .v .pricee .cardCont .card1 h1{
+
+    font-size: 260%;
+ }
+
+ .v .pricee .cardCont .card2 h3{
+    font-size: 100%;
+    text-align: justify;
+    word-spacing: normal;
+ }
+
+ .v .pricee .cardCont .card2 h3 svg{
+    font-size: 100%;
+ }
+
+ .v .bg-az .pricee button a {
+    font-size: 1.5rem;
+}
+
+.v .pricee .cardCont {
+    gap: 2rem;
+}
+
+.v .bg-az .pricee  button:hover a{
+    font-size: 1.4rem;
+}
+
+.v .pricee .cardCont .card2 h3{
+    text-align: start;
+}
+
+
+
+}
+
+

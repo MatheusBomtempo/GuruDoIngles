@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+/* .backGrad{
+    background: rgb(0,17,61);
+    background: linear-gradient(149deg, rgba(0,17,61,1) 1%, rgba(0,26,98,1) 74%);
+
+} */
+
+/* .cax{
+    max-width: 300px;
+    mar
+} */
+
+*{
+    font-family: epilogue, sans-serif;
+}
+
+/* #lt-inter{
+    font-family: inter, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .5rem;
+} */
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+/* .backGrad{
+	background: url(../../imgs/360_F_598940195_m1jRnF6KzK0j9l0bzAhDYbi1Du7Xcdky.jpg) top right no-repeat;
+	background-size: cover;
+	mix-blend-mode:screen;
+	opacity: 0.4;
+} */
+
+.backGrad img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	mix-blend-mode:color-dodge;
+	filter: blur(20px);
+
+}
+
+.cartoes{
+	z-index: 10;
+}
