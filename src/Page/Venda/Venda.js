@@ -51,38 +51,110 @@ const Venda = () => {
   const videoSrc = '../../imgs/Cut3.webm';
   const videoSrc2 = '../../imgs/Cut3.mp4';
 
-  const [playing, setPlaying] = useState(false);
-  const [pauseButtonVisible, setPauseButtonVisible] = useState(false); // New state
-  const videoRef = useRef(null);
-  const controlsTimeout = useRef(null);
+  // Video 1
+  const [playing1, setPlaying1] = useState(false);
+  const [pauseButtonVisible1, setPauseButtonVisible1] = useState(false);
+  const videoRef1 = useRef(null);
+  const controlsTimeout1 = useRef(null);
 
-  useEffect(() => {
-    if (playing) {
-      setPauseButtonVisible(true);
-      clearTimeout(controlsTimeout.current);
-      controlsTimeout.current = setTimeout(() => {
-        setPauseButtonVisible(false);
-      }, 1000); // Hide pause button after 1 second
-    }
-  }, [playing]);
-
-  const togglePlay = () => {
-    const video = videoRef.current;
+  const togglePlay1 = () => {
+    const video = videoRef1.current;
     if (video.paused) {
       video.play();
-      setPlaying(true);
+      setPlaying1(true);
     } else {
       video.pause();
-      setPlaying(false);
+      setPlaying1(false);
     }
   };
 
-  const handleMouseMove = () => {
-    if (playing) {
-      setPauseButtonVisible(true);
-      clearTimeout(controlsTimeout.current);
-      controlsTimeout.current = setTimeout(() => {
-        setPauseButtonVisible(false);
+  const handleMouseMove1 = () => {
+    if (playing1) {
+      setPauseButtonVisible1(true);
+      clearTimeout(controlsTimeout1.current);
+      controlsTimeout1.current = setTimeout(() => {
+        setPauseButtonVisible1(false);
+      }, 1000);
+    }
+  };
+
+  // Video 2
+  const [playing2, setPlaying2] = useState(false);
+  const [pauseButtonVisible2, setPauseButtonVisible2] = useState(false);
+  const videoRef2 = useRef(null);
+  const controlsTimeout2 = useRef(null);
+
+  const togglePlay2 = () => {
+    const video = videoRef2.current;
+    if (video.paused) {
+      video.play();
+      setPlaying2(true);
+    } else {
+      video.pause();
+      setPlaying2(false);
+    }
+  };
+
+  const handleMouseMove2 = () => {
+    if (playing2) {
+      setPauseButtonVisible2(true);
+      clearTimeout(controlsTimeout2.current);
+      controlsTimeout2.current = setTimeout(() => {
+        setPauseButtonVisible2(false);
+      }, 1000);
+    }
+  };
+  // Video 3
+  const [playing3, setPlaying3] = useState(false);
+  const [pauseButtonVisible3, setPauseButtonVisible3] = useState(false);
+  const videoRef3 = useRef(null);
+  const controlsTimeout3 = useRef(null);
+
+  const togglePlay3 = () => {
+    const video = videoRef3.current;
+    if (video.paused) {
+      video.play();
+      setPlaying3(true);
+    } else {
+      video.pause();
+      setPlaying3(false);
+    }
+  };
+
+  const handleMouseMove3 = () => {
+    if (playing3) {
+      setPauseButtonVisible3(true);
+      clearTimeout(controlsTimeout3.current);
+      controlsTimeout3.current = setTimeout(() => {
+        setPauseButtonVisible3(false);
+      }, 1000);
+    }
+  };
+
+  ////4
+
+  const [playing4, setPlaying4] = useState(false);
+  const [pauseButtonVisible4, setPauseButtonVisible4] = useState(false);
+  const videoRef4 = useRef(null);
+  const controlsTimeout4 = useRef(null);
+
+  const togglePlay4 = () => {
+    const video = videoRef4.current;
+    if (video.paused) {
+      video.play();
+      setPlaying4(true);
+    } else {
+      video.pause();
+      setPlaying4(false);
+    }
+  };
+
+  const handleMouseMove4 = () => {
+    if (playing4) {
+      setPauseButtonVisible4(true);
+      clearTimeout(controlsTimeout4.current);
+      controlsTimeout4.current = setTimeout(() => {
+        setPauseButtonVisible4(false);
       }, 1000);
     }
   };
@@ -112,18 +184,21 @@ const Venda = () => {
                 </p>
               </div>
 
-              <div className="vid" onMouseMove={handleMouseMove}>
-                <video ref={videoRef} poster={poster1} onClick={togglePlay}>
+              <div className="vid" onMouseMove={handleMouseMove1}>
+                <video ref={videoRef1} poster={poster1} onClick={togglePlay1}>
                   <source src={play2} type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
                 </video>
-                {playing && pauseButtonVisible && (
-                  <div className="play-pause-button" onClick={togglePlay}>
+                {playing1 && pauseButtonVisible1 && (
+                  <div className="play-pause-button" onClick={togglePlay1}>
                     \
                   </div>
                 )}
-                {!playing && (
-                  <div className="play-pause-button" onClick={togglePlay}></div>
+                {!playing1 && (
+                  <div
+                    className="play-pause-button"
+                    onClick={togglePlay1}
+                  ></div>
                 )}
               </div>
             </div>
@@ -267,13 +342,13 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-                <div className="vidtablet1" onMouseMove={handleMouseMove}>
-                  <video ref={videoRef} poster={poster2} onClick={togglePlay}>
+                <div className="vidtablet1" onMouseMove={handleMouseMove2}>
+                  <video ref={videoRef2} poster={poster2} onClick={togglePlay2}>
                     <source src={play3} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
-                  {playing && pauseButtonVisible && (
-                    <div className="play-pause-button" onClick={togglePlay}>
+                  {playing2 && pauseButtonVisible2 && (
+                    <div className="play-pause-button" onClick={togglePlay2}>
                       <FontAwesomeIcon
                         id="icons"
                         className="site-form-item-icon text-white-500 text-3xl"
@@ -281,8 +356,8 @@ const Venda = () => {
                       />
                     </div>
                   )}
-                  {!playing && (
-                    <div className="play-pause-button" onClick={togglePlay}>
+                  {!playing2 && (
+                    <div className="play-pause-button" onClick={togglePlay2}>
                       <FontAwesomeIcon
                         id="icons"
                         className="site-form-item-icon text-white-500 text-3xl"
@@ -317,37 +392,29 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-                <div className="esqCla cl" onMouseMove={handleMouseMove}>
-                  <video ref={videoRef}
-        poster={poster3}
-        onClick={togglePlay}>
+                <div className="esqCla cl" onMouseMove={handleMouseMove3}>
+                  <video ref={videoRef3} poster={poster3} onClick={togglePlay3}>
                     <source src={play4} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
-                  {playing && pauseButtonVisible && (
-        <div
-          className="play-pause-button"
-          onClick={togglePlay}
-        >
-          <FontAwesomeIcon
-            id="icons"
-            className="site-form-item-icon text-white-500 text-3xl"
-            icon={faPause}
-          />
-        </div>
-      )}
-      {!playing && (
-        <div
-          className="play-pause-button"
-          onClick={togglePlay}
-        >
-          <FontAwesomeIcon
-            id="icons"
-            className="site-form-item-icon text-white-500 text-3xl"
-            icon={faPlay}
-          />
-        </div>
-      )}
+                  {playing3 && pauseButtonVisible3 && (
+                    <div className="play-pause-button" onClick={togglePlay3}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPause}
+                      />
+                    </div>
+                  )}
+                  {!playing3 && (
+                    <div className="play-pause-button" onClick={togglePlay3}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPlay}
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <div className="dirCla cl">
@@ -382,13 +449,30 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-                <div className="esqCla cl">
-                  <video controls>
+              <div className="esqCla cl" onMouseMove={handleMouseMove4}>
+                  <video ref={videoRef4} poster={poster4} onClick={togglePlay4}>
                     <source src={play5} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
+                  {playing4 && pauseButtonVisible4 && (
+                    <div className="play-pause-button" onClick={togglePlay4}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPause}
+                      />
+                    </div>
+                  )}
+                  {!playing4 && (
+                    <div className="play-pause-button" onClick={togglePlay4}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPlay}
+                      />
+                    </div>
+                  )}
                 </div>
-
                 <div className="dirCla cl">
                   <img src={tablet4}></img>
                 </div>

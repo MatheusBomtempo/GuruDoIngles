@@ -499,7 +499,9 @@
   }
   
   /* ... Additional styles for your controls ... */
-  
+  .v .cl video{
+    cursor: pointer;
+  }
   
   video {
     display: block;
