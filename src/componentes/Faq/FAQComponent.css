@@ -16,8 +16,8 @@
 
 .txtsEsq {
   padding: 1rem;
-  width: 600px; /* Ajuste de largura */
-  text-align: justify; /* Alinhamento de texto justificado */
+  width: 600px; 
+  text-align: justify; 
 }
 
 .sub-title {
@@ -47,7 +47,7 @@
 }
 
 .boxes.active .answer {
-  max-height: 1000px; /* Ajuste o valor conforme necessário */
+  max-height: 1000px; 
   opacity: 1;
   font-family: Epilogue, sans-serif;
   font-weight: 600;
