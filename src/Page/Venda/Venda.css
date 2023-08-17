@@ -2,14 +2,10 @@
     background-color: #ffff;
 }
 
-/* html{
-    background-color: #ffffff;
-} */
-
 
 #line{
-    border: none; /* Remova a borda padrão */
-    height: 8px; /* Defina a altura da linha */
+    border: none; /
+    height: 8px; 
     background-color: #FFC700;
 }
 
@@ -117,7 +113,6 @@
     width: 100%;
 }
 
-/* ////////////////////////////// */
 
 .v .acompanha p{
     letter-spacing: normal;
@@ -126,7 +121,7 @@
 }
 
 .v .acompanha{
-    /* height: 100%; */
+
     padding: 4rem 1rem;
     background-color: #ffff;
 }
@@ -171,11 +166,11 @@
 }
 
 
-/* /////////////////////////////// */
+
 
 
 .v .plataform{
-    /* border-radius: 58px 58px 0px 0px; */
+
     background: #0069FF no-repeat ;
     z-index: -1000;
 }
@@ -218,7 +213,6 @@
 }
 
 
-/* /////////////////////////// */
 
 .v .cursos2{
     background: url('/src/imgs/pattern3.png') no-repeat center center / cover;
@@ -232,7 +226,6 @@
 .v .cursos2 .boxCursos{
     display: flex;
     justify-content: space-between;
-    /* gap: 4rem; */
     align-items: center;
     max-width: 1400px;
     flex-shrink: 0;
@@ -267,7 +260,6 @@
 .v .cursos2 .boxCursos1{
     display: flex;
     flex-direction: column;
-    /* gap: 4rem; */
     align-items: center;
     max-width: 1400px;
     flex-shrink: 0;
@@ -317,7 +309,6 @@
 }
 
 
-/* ////////////////////////////////  DEPOIMENTOS*/
 
 .v .tituloDepo{
     background-color: #C20004;
@@ -328,9 +319,6 @@
 .v .tituloDepo h1{
     font-size: 1.8rem;
 }
-
-
-/* ////////////////////////// */
 
 .v .bg-az .pricee h2{
     font-family: 'Staatliches', sans-serif;
@@ -350,15 +338,6 @@
     font-weight: 500;
 }
 
-/* .v .bg-az{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    margin: 8rem 5%;
-    gap: 3rem;
-    background-color:#FFC700 ;
-} */
 
  .v .bg-az .pricee  button{
     background-color: #FFC700;
@@ -387,39 +366,8 @@
     padding-left: .5rem;
     transition: .2s ;
 }
- */
 
 
-/* .v .card1{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 2rem 3rem;
-    gap: .4rem;
-    border-radius: 2rem;
-    width: 300px;
-    background-color: #fff;
-    box-shadow:
-    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.025),
-    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.036),
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.054),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.065),
-    100px 100px 80px rgba(0, 0, 0, 0.09)
-    ;
-}
-
-.v .precoPai{
-    display: flex;
-    align-items: center;
-}
-
-.v .upgrades{
-    display: flex;
-    align-items: center;
-}
- */
 
  .v  .pricee{
     line-height: 1.1;
@@ -506,14 +454,14 @@
  }
 
 
-/* //////////////////// */
+
 
 
 .v .boxes p{
     text-align: start;
 }
 
-/* VideoPlayer.css */
+
 
   
   video {
@@ -580,7 +528,7 @@
     }
 
 
-    /* ///////// acompanha */
+
     .v .acompanha {
         justify-content: space-between;
     }
@@ -597,7 +545,7 @@
         max-width: 600px;
     }
 
-    /* //// cursos */
+  
 
     .v .cursos2 .boxCursos {
         padding: 3rem 6rem;
@@ -653,7 +601,7 @@
     .v .cursos2 .boxCursos1 .cl {
         width: 304px;
         border-radius: 1.5rem;
-        /* margin: 0 auto; */
+   
     }
 
     .v .cursos2 .boxCursos1 video{
@@ -662,7 +610,7 @@
     }
 
 
-    /* ///////////// preco  */
+   
 
 
     .v .pricee .cardCont {
@@ -728,7 +676,6 @@
         width: 90%;
     }
 
-      /* ///////// acompanha */
 
       .v .acompanha h1 {
         margin-bottom: 2rem;
@@ -755,7 +702,7 @@
         max-width: 300px;
     }
 
-    /* cursos */
+
 
 
     .v .cursos2{
@@ -824,10 +771,7 @@
   @media (max-width: 660px){
     .v .support{
         height: auto;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center; */
+        
         padding: 3rem .4rem;
         flex-wrap: wrap;
         
@@ -851,7 +795,7 @@
         max-width: 80%;
     }
 
-     /* ///////// acompanha */
+     
 
      .v .acompanhaInner {
        flex-direction: column;
@@ -875,7 +819,7 @@
         max-width: 300px;
     }
 
-    /* plataform */
+
 
     
     .v .plataform h1{
@@ -903,7 +847,7 @@
     }
      
 
-    /* ////////// cusros  */
+
 
   
 
@@ -953,7 +897,7 @@
 
 
 
-/* ///////// preco */
+
 
 .v .pricee .cardCont .card2 h1{
     font-size: 170%;
