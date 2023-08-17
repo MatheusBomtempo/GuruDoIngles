@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Venda.css';
 import cel1 from '../../imgs/cel1.png';
 import cadernos from '../../imgs/cadernos2.png';
@@ -24,7 +24,13 @@ import ipx1 from '../../imgs/ipX2.png';
 import sala from '../../imgs/sala.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faGift, faHandPointer } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheck,
+  faGift,
+  faHandPointer,
+  faPlay,
+  faPause,
+} from '@fortawesome/free-solid-svg-icons';
 import foguete from '../../imgs/rocket.png';
 import Navbar1 from '../../componentes/Navbar/Navbar1';
 import Depoimentos2 from '../../componentes/Depoimentos2/Depoimentos2';
@@ -36,43 +42,90 @@ import play2 from '../../imgs/Cut3.mp4';
 import play3 from '../../imgs/Ta2.mp4';
 import play4 from '../../imgs/Ta4.mp4';
 import play5 from '../../imgs/Ta5.mp4';
+import poster1 from '../../imgs/suporteThumb.jpg';
+import poster2 from '../../imgs/UofEThumb.jpg';
+import poster3 from '../../imgs/speakingThumb.jpg';
+import poster4 from '../../imgs/writingThumb.jpg';
 
 const Venda = () => {
   const videoSrc = '../../imgs/Cut3.webm';
   const videoSrc2 = '../../imgs/Cut3.mp4';
+
+  const [playing, setPlaying] = useState(false);
+  const [pauseButtonVisible, setPauseButtonVisible] = useState(false); // New state
+  const videoRef = useRef(null);
+  const controlsTimeout = useRef(null);
+
+  useEffect(() => {
+    if (playing) {
+      setPauseButtonVisible(true);
+      clearTimeout(controlsTimeout.current);
+      controlsTimeout.current = setTimeout(() => {
+        setPauseButtonVisible(false);
+      }, 1000); // Hide pause button after 1 second
+    }
+  }, [playing]);
+
+  const togglePlay = () => {
+    const video = videoRef.current;
+    if (video.paused) {
+      video.play();
+      setPlaying(true);
+    } else {
+      video.pause();
+      setPlaying(false);
+    }
+  };
+
+  const handleMouseMove = () => {
+    if (playing) {
+      setPauseButtonVisible(true);
+      clearTimeout(controlsTimeout.current);
+      controlsTimeout.current = setTimeout(() => {
+        setPauseButtonVisible(false);
+      }, 1000);
+    }
+  };
 
   return (
     <>
       <Navbar1 />
       <body className="corpo">
         <div className="v">
-          <section className='bg-az borda'>
+          <section className="bg-az borda">
             <div className="support">
               <div className="esq">
                 <h1>
-                  Suporte <span className="vermei">Individual</span> para dúvidas
+                  Suporte <span className="vermei">Individual</span> para
+                  dúvidas
                 </h1>
                 <p>
                   Durante sua rotina de estudos você poderá enviar suas dúvidas
                   para o guru diretamente em seu número pessoal no WhatsApp. ele
-                  tentará, primeiramente, te explicar por texto e/ou por áudio sua
-                  dúvida. caso não seja sanada, você receberá uma explicação em
-                  vídeo personalizada e direcionada exatamente com a explicação
-                  que você precisa. e se, mesmo assim, você não entender aquele
-                  conteúdo, o guru vai marcar um horário para entrar ao vivo pelo
-                  zoom e te explicar em particular o que precisa ser explicado.
+                  tentará, primeiramente, te explicar por texto e/ou por áudio
+                  sua dúvida. caso não seja sanada, você receberá uma explicação
+                  em vídeo personalizada e direcionada exatamente com a
+                  explicação que você precisa. e se, mesmo assim, você não
+                  entender aquele conteúdo, o guru vai marcar um horário para
+                  entrar ao vivo pelo zoom e te explicar em particular o que
+                  precisa ser explicado.
                 </p>
               </div>
-              
-              <div className="vid">
-                <video controls>
+
+              <div className="vid" onMouseMove={handleMouseMove}>
+                <video ref={videoRef} poster={poster1} onClick={togglePlay}>
                   <source src={play2} type="video/mp4" />
                   Seu navegador não suporta o elemento de vídeo.
                 </video>
-            
+                {playing && pauseButtonVisible && (
+                  <div className="play-pause-button" onClick={togglePlay}>
+                    \
+                  </div>
+                )}
+                {!playing && (
+                  <div className="play-pause-button" onClick={togglePlay}></div>
+                )}
               </div>
-            
-              
             </div>
           </section>
 
@@ -214,11 +267,29 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-                <div className="vidtablet1">
-                  <video controls>
+                <div className="vidtablet1" onMouseMove={handleMouseMove}>
+                  <video ref={videoRef} poster={poster2} onClick={togglePlay}>
                     <source src={play3} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
+                  {playing && pauseButtonVisible && (
+                    <div className="play-pause-button" onClick={togglePlay}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPause}
+                      />
+                    </div>
+                  )}
+                  {!playing && (
+                    <div className="play-pause-button" onClick={togglePlay}>
+                      <FontAwesomeIcon
+                        id="icons"
+                        className="site-form-item-icon text-white-500 text-3xl"
+                        icon={faPlay}
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -246,11 +317,37 @@ const Venda = () => {
               </div>
 
               <div className="clarissabox">
-                <div className="esqCla cl">
-                  <video controls>
+                <div className="esqCla cl" onMouseMove={handleMouseMove}>
+                  <video ref={videoRef}
+        poster={poster3}
+        onClick={togglePlay}>
                     <source src={play4} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
+                  {playing && pauseButtonVisible && (
+        <div
+          className="play-pause-button"
+          onClick={togglePlay}
+        >
+          <FontAwesomeIcon
+            id="icons"
+            className="site-form-item-icon text-white-500 text-3xl"
+            icon={faPause}
+          />
+        </div>
+      )}
+      {!playing && (
+        <div
+          className="play-pause-button"
+          onClick={togglePlay}
+        >
+          <FontAwesomeIcon
+            id="icons"
+            className="site-form-item-icon text-white-500 text-3xl"
+            icon={faPlay}
+          />
+        </div>
+      )}
                 </div>
 
                 <div className="dirCla cl">
@@ -286,7 +383,7 @@ const Venda = () => {
 
               <div className="clarissabox">
                 <div className="esqCla cl">
-                <video controls>
+                  <video controls>
                     <source src={play5} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
@@ -304,14 +401,13 @@ const Venda = () => {
               <h1 className="branco">DEPOIMENTOS</h1>
             </div>
 
-            <Depoimentos2 backgroundColor="bluewbgg"/>
-
+            <Depoimentos2 backgroundColor="bluewbgg" />
           </div>
 
           <div className="acompanha" style={{ height: 'auto' }}>
             <div className="acompanhaInner">
               <div className="esq">
-                <h1 >
+                <h1>
                   <span className="vermei">SIMULADOS</span> PERIÓDICOS
                 </h1>
                 <p style={{ textAlign: 'justify' }}>
