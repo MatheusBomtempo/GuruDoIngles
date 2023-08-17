@@ -1,13 +1,21 @@
 import React from 'react';
-import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import '../Cursos/Cursos.css';
 // import Carousel1 from '../../componentes/Depoimentos/Depoimentos'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import fundo from '../../imgs/flare1.jpg';
 
+
+ 
+
 const Cursos = () => {
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/venda');
+  };
 
   return (
     <div className="backGrad">
@@ -34,9 +42,10 @@ const Cursos = () => {
               <li
                 key=""
                 className="hover:scale-105 transition duration-300 ease-in-out "
+                onClick={handleClick}
               >
                 
-                <a href="" target="_blank" rel="noreferrer">
+                <a >
                   <figure className="relative rounded-3xl bg-gray-600/50 p-6 shadow-xl shadow-slate-900/10 ">
                     <figcaption className="relative  flex items-center justify-between">
                       <div>
@@ -64,7 +73,7 @@ const Cursos = () => {
 
                     <a
                       className="flex text-center justify-center items-center	 bg-red-600 rounded-xl text-white font-bold text-2xl px-4 py-3 mt-8 hover:bg-blue-500 transition"
-                      href="/dream"
+                      href="/venda"
                     >
                       Saiba Mais{' '}
                       <FontAwesomeIcon
@@ -112,7 +121,7 @@ const Cursos = () => {
 
                     <a
                       className="flex text-center justify-center items-center	 bg-red-600 rounded-xl text-white font-bold text-2xl px-4 py-3 mt-8 hover:bg-blue-500 transition"
-                      href="/dream"
+                      href="/emBreve"
                     >
                       Em Breve{' '}
                       <FontAwesomeIcon
@@ -161,7 +170,7 @@ const Cursos = () => {
 
                     <a
                       className="flex text-center justify-center items-center	 bg-red-600 rounded-xl text-white font-bold text-2xl px-4 py-3 mt-8 hover:bg-blue-500 transition"
-                      href="/dream"
+                      href="/emBreve"
                     >
                       Em Breve{' '}
                       <FontAwesomeIcon
@@ -203,7 +212,7 @@ const Cursos = () => {
 
                     <a
                       className="flex text-center justify-center items-center	 bg-red-600 rounded-xl text-white font-bold text-2xl px-4 py-3 mt-8 hover:bg-blue-500 transition"
-                      href="/dream"
+                      href="/emBreve"
                     >
                       Em Breve{' '}
                       <FontAwesomeIcon

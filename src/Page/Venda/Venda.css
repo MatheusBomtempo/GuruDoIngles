@@ -21,6 +21,7 @@
     color: #081B4B;
 }
 
+
 .v h4{
     color: #ffff;
     font-weight: 600;
@@ -48,6 +49,10 @@
 
 .v .branco{
     color: #fff;
+}
+
+.v .whiteBg{
+    background-color: #fff;
 }
 
 

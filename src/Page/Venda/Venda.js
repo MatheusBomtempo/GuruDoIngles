@@ -46,6 +46,7 @@ import poster1 from '../../imgs/suporteThumb.jpg';
 import poster2 from '../../imgs/UofEThumb.jpg';
 import poster3 from '../../imgs/speakingThumb.jpg';
 import poster4 from '../../imgs/writingThumb.jpg';
+import Social from '../../componentes/Social/Social';
 
 const Venda = () => {
   const videoSrc = '../../imgs/Cut3.webm';
@@ -541,8 +542,12 @@ const Venda = () => {
               </h1>
             </div>
 
-            <div className="pricee mb-14">
+            <div className="pricee mb-20">
               <Prices></Prices>
+            </div>
+
+            <div className='whiteBg' id='#social'>
+              <Social></Social>
             </div>
 
             <div>

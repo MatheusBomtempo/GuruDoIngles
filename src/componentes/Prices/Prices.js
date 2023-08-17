@@ -20,7 +20,7 @@ const Prices = () => {
   };
 
   return (
-    <div className="cardOut">
+    <div className="cardOut ">
       <h1 className="titulo3 mb-4 mt-4">
         ACESSO POR <span>6 MESES</span>
       </h1>

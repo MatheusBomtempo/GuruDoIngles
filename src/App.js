@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ScrollToTop from './componentes/ScrollToTop/ScrollToTop'
 import Home from './Page/Home/Home'
 import Venda from './Page/Venda/Venda';
+import Loading from './Page/Loading/Loading';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
               <Route path="/" element={<Home></Home>} />
               <Route path="/venda" element={<Venda></Venda>} />    
             </ScrollToTop>
+
+            <Route path="/emBreve" element={<Loading></Loading>} /> 
           </Routes>
           
       </Router>
