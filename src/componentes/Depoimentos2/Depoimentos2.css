@@ -31,7 +31,7 @@
 }
 
 .swiper_container {
-  height: 37rem;
+  height: 35rem;
   padding: 2rem 0;
   position: relative;
   gap: 0;
@@ -114,10 +114,9 @@
 
 
 
-
 @media (max-width: 500px) {
   .swiper-slide img {
-    width: 12rem;
+    width: 13rem;
     height: 22rem;
   }
 

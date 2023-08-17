@@ -16,7 +16,7 @@ import slide_image_1 from '../../imgs/dep1.png';
 import slide_image_2 from '../../imgs/dep2.png';
 import slide_image_3 from '../../imgs/dep3.png';
 import slide_image_4 from '../../imgs/dep4.png';
-import slide_image_5 from '../../imgs/dep5.png';
+import slide_image_5 from '../../imgs/dep51.png';
 
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
