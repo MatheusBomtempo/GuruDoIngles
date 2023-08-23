@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Navbar1 from '../../componentes/Navbar/Navbar1'
+
 const Loading = () => {
   return (
+    <>
+    <Navbar1></Navbar1>
     <div
       className="flex items-center justify-center h-screen"
       style={{ backgroundColor: '#081B4B' }}
@@ -11,6 +15,7 @@ const Loading = () => {
        
       </div>
     </div>
+    </>
   );
 };
 

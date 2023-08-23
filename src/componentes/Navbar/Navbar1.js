@@ -47,7 +47,7 @@ export default function Example() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="/" className="flex items-center">
+        <a href="/contatos" className="flex items-center">
           Contatos
         </a>
       </Typography>

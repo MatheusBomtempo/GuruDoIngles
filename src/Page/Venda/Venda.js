@@ -544,17 +544,17 @@ const Venda = () => {
               </a>
             </div>
 
-            <div className="pricee mb-20">
+            <section className="pricee mb-20">
               <Prices></Prices>
-            </div>
+            </section>
 
-            <div className="whiteBg" id="#social">
+            <section className="whiteBg" id="#social">
               <Social></Social>
-            </div>
+            </section>
 
-            <div>
+            <section>
               <FAQComponent></FAQComponent>
-            </div>
+            </section>
           </div>
         </div>
       </body>
