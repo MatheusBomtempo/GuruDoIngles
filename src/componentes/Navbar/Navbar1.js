@@ -47,6 +47,17 @@ export default function Example() {
         color="white"
         className="p-1 font-normal"
       >
+        <a href="/formulario" className="flex items-center">
+          Evento
+        </a>
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="medium"
+        color="white"
+        className="p-1 font-normal"
+      >
         <a href="/contatos" className="flex items-center">
           Contatos
         </a>

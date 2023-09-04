@@ -6,6 +6,7 @@ import Home from './Page/Home/Home'
 import Venda from './Page/Venda/Venda';
 import Loading from './Page/Loading/Loading';
 import Contatos from './Page/Contatos/Contatos';
+import Formulario from './Page/Formulario/Formulario';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
             <Route path="/contatos" element={<Contatos></Contatos>} /> 
 
             <Route path="/emBreve" element={<Loading></Loading>} /> 
+
+            <Route path="/formulario" element={<Formulario></Formulario>} /> 
           </Routes>
           
       </Router>
