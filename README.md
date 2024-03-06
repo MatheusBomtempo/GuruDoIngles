@@ -1,6 +1,7 @@
 # Guru do Inglês
 
 Bem-vindo ao repositório do site do **Guru do Inglês**! Este projeto foi desenvolvido utilizando [Next.js](https://nextjs.org/), uma framework de React que possibilita performance incrível e uma ótima experiência de desenvolvimento.
+Acesse e veja: (https://guru-do-ingles.vercel.app)
 
 ## Sobre o Projeto
 
