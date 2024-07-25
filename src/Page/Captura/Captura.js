@@ -104,13 +104,36 @@ const Captura = () => {
           <div className="lateralmente">
             <FadeInUpContainer>
               <div className="filhos fio1">
-                <img
-                  src={inglesemmedo}
-                  className="inglesemmedo"
-                  alt="Inglês sem medo"
-                />
+                <div className='ftbut'>
+                  <img
+                    src={inglesemmedo}
+                    className="inglesemmedo"
+                    alt="Inglês sem medo"
+                  />
+                  <form>
+                    <button
+                      className="text-white bg-green-600 rounded-2xl p-3 text-base py-2 items-center w-full hover:scale-105 transition duration-300 ease-in-out hover:bg-blue-900 "
+                      type="submit"
+                      style={{ backgroundColor: '#38a169', color: 'white' }}
+                      disabled={isLoading}
+                    >
+                      {isLoading ? (
+                        <ClipLoader color="white" size={24} />
+                      ) : (
+                        <>
+                          INSCREVER-SE{' '}
+                          <FontAwesomeIcon
+                            id="icons"
+                            className="site-form-item-icon text-yellow-500 text-xl"
+                            icon={faCheck}
+                          />
+                        </>
+                      )}
+                    </button>
+                  </form>
+                </div>
 
-                <h1 className="text-white md:text-3xl sm:text-base">
+                <h1 className="text-white md:text-3xl sm:text-base ">
                   Vamos remover esse{' '}
                   <span className="text-red-600">bloqueio</span> com o inglês
                   num ambiente acolhedor e{' '}
