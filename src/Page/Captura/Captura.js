@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Captura.css';
 import '../../animations.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +6,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Swal from 'sweetalert2';
+import { ClipLoader } from 'react-spinners';
 
 import Navbar1 from '../../componentes/Navbar/Navbar1';
 
@@ -31,22 +32,16 @@ const FadeInUpContainer = styled.div`
 `;
 
 const Captura = () => {
-//   const navigate = useNavigate();
-
-//   const handleClick = () => {
-//     navigate('/venda');
-//   };
+  const [result, setResult] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  //  requisicao email
-
-  const [result, setResult] = React.useState('');
-
   const onSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true);
     setResult('Sending....');
     const formData = new FormData(event.target);
 
@@ -58,6 +53,8 @@ const Captura = () => {
     });
 
     const data = await response.json();
+
+    setIsLoading(false);
 
     if (data.success) {
       let timerInterval;
@@ -154,14 +151,21 @@ const Captura = () => {
                     <button
                       className="text-white bg-green-600 rounded-2xl p-3 py-4 items-center w-full hover:scale-105 transition duration-300 ease-in-out hover:bg-blue-900"
                       type="submit"
-                      style={{ backgroundColor: '#38a169', color: 'white' }} // Adiciona as cores diretamente
+                      style={{ backgroundColor: '#38a169', color: 'white' }}
+                      disabled={isLoading}
                     >
-                      Começar agora{' '}
-                      <FontAwesomeIcon
-                        id="icons"
-                        className="site-form-item-icon text-yellow-500 text-2xl"
-                        icon={faCheck}
-                      />
+                      {isLoading ? (
+                        <ClipLoader color="white" size={24} />
+                      ) : (
+                        <>
+                          Começar agora{' '}
+                          <FontAwesomeIcon
+                            id="icons"
+                            className="site-form-item-icon text-yellow-500 text-2xl"
+                            icon={faCheck}
+                          />
+                        </>
+                      )}
                     </button>
                   </form>
                 </section>

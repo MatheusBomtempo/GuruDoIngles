@@ -17,6 +17,7 @@
     "react-router-dom": "^6.0.0",
     "react-scripts": "5.0.1",
     "react-simply-carousel": "^9.0.4",
+    "react-spinners": "^0.14.1",
     "sass": "^1.63.4",
     "styled-components": "^6.0.2",
     "sweetalert2": "^11.12.3",
