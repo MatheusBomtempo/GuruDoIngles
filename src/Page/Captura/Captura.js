@@ -304,6 +304,7 @@ const Captura = () => {
                   </>
                 )}
               </button>
+              {/* teste */}
             </form>
           </div>
         </div>
