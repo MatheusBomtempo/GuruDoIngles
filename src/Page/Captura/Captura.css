@@ -1,0 +1,194 @@
+.inglesemmedo{
+    width:160px;
+    margin-bottom: 1rem;
+}
+
+.lateralmente h1{
+    font-size: 2rem;
+}
+
+.lateralmente h3{
+    font-size: 1.1rem;
+}
+
+.formbox1{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.formbox1 input{
+    border-radius: .4rem;
+    padding: .8rem 1rem;
+    width: 90%;
+    margin-left: .3rem;
+}
+
+.form{
+    margin-bottom: 1.5rem;
+}
+
+.heroo{
+
+    height: 80vh;
+    width: 100%;
+  }
+
+  .fundo2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode:color-dodge;
+    opacity: 0.2;
+    filter: blur(20px);
+    z-index: -1;
+  }
+
+  .fio1{
+    width: 450px;
+  }
+
+  .side{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 2rem;
+  }
+
+  .lateralmente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page2cap{
+    background-color: #C20004;
+    padding-bottom: 2rem;
+  }
+
+  .quadroMot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2rem 5rem;
+}
+
+.motivo {
+    color: white;
+    background-color: #00113D;
+    padding: 20px;
+    border: 1px solid #C8C8C8;
+    border-radius: 1.2rem;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); 
+}
+
+
+
+.titcap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.souraul{
+    border-radius: 2rem;
+    width: 420px;
+    margin-right: 2rem;
+}
+
+.side2{
+    justify-content:space-between ;
+    width: 40%;
+    margin-left: 0;
+}
+
+.ingles2{
+    margin: 2rem 1rem;
+}
+
+.pag3cap h3{
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 1141px) {
+    .pag3cap .lateralmente{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+}
+
+/* Grade 2x2x2x2 para telas menores */
+@media (max-width: 767px) {
+
+    .titcap{
+        width: 300px;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .motivo {
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    .quadroMot {
+        margin: 2rem 1rem;
+    }
+}
+
+  @media(max-width:900px){
+    .pag1cap .side{
+        display: none;
+      }
+
+      .fio1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        max-width: 400px;
+        text-align: start;
+      }
+
+      .lateralmente section{
+        width: 100%;
+      }
+
+      .fio1 input{
+        min-width: 100%;
+        margin-left: 0;
+      }
+
+      
+
+      .lateralmente h1{
+        font-size: 1.6rem;
+    }
+
+    .lateralmente h3{
+        font-size: .9rem;
+    }
+
+    .inglesemmedo{
+        margin-top: 1.5rem;
+    }
+
+    .heroo, .hero2 {
+        height: 100%;
+    }
+
+    .side2{
+        width: 70%;
+    }
+
+  }

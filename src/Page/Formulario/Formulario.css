@@ -1,12 +1,11 @@
 /* Formulario.css */
 
 .formCorpo {
-    position: fixed;
-    top: 60px; /* Adjust this value according to your navbar's height */
-    left: 0;
-    right: 0;
-    bottom: 0;
+   display: flex;
+   justify-content: center;
+   margin-top: 7rem;
     z-index: -1; /* Ensure the Typeform is behind the navbar */
+    width: 100%;
   }
   
   .navv {
@@ -18,6 +17,5 @@
   
   /* ... other styles ... */
   .formWrapper {
-    position: relative;
-    overflow: hidden; /* Ensures that the Typeform content does not overflow */
+    height: 100%;
   }  

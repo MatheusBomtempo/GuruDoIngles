@@ -7,6 +7,7 @@ import Venda from './Page/Venda/Venda';
 import Loading from './Page/Loading/Loading';
 import Contatos from './Page/Contatos/Contatos';
 import Formulario from './Page/Formulario/Formulario';
+import Captura from './Page/Captura/Captura';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
             <Route path="/emBreve" element={<Loading></Loading>} /> 
 
             <Route path="/formulario" element={<Formulario></Formulario>} /> 
+
+            <Route path="/captura" element={<Captura></Captura>} /> 
           </Routes>
           
       </Router>

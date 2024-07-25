@@ -1,7 +1,8 @@
 import React from 'react';
 import './Formulario.css';
 import Navbar1 from '../../componentes/Navbar/Navbar1';
-import Typeform from '../../componentes/TypeForm/TypeForm';
+import GoogleForm from '../../componentes/GoogleForm/GoogleForm';
+// import Typeform from '../../componentes/TypeForm/TypeForm';
 
 const Formulario = () => {
   return (
@@ -10,7 +11,8 @@ const Formulario = () => {
         <Navbar1 />
       </div>
       <div className='formCorpo'>
-        <Typeform />
+        {/* <Typeform /> */}
+        <GoogleForm/>
       </div>
     </div>
   );
