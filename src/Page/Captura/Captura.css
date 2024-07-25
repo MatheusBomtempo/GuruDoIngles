@@ -16,10 +16,12 @@
 
 .lateralmente h1{
     font-size: 2rem;
+    text-align:justify;
 }
 
 .lateralmente h3{
     font-size: 1.1rem;
+    text-align:justify;
 }
 
 .formbox1{
