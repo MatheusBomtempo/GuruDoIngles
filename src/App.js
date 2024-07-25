@@ -30,7 +30,7 @@ function App() {
 
             <Route path="/formulario" element={<Formulario></Formulario>} /> 
 
-            <Route path="/captura" element={<Captura></Captura>} /> 
+            <Route path="/inglessemmedo" element={<Captura></Captura>} /> 
           </Routes>
           
       </Router>
