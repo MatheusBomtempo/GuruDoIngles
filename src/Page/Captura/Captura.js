@@ -78,7 +78,8 @@ const Captura = () => {
       }).then((result) => {
         if (result.dismiss === Swal.DismissReason.timer) {
           console.log('I was closed by the timer');
-          window.location.href = 'https://chat.whatsapp.com/Ko3oKGFFeuTG5Fz8qijkfW';
+          window.location.href =
+            'https://chat.whatsapp.com/Ko3oKGFFeuTG5Fz8qijkfW';
         }
       });
       event.target.reset();
@@ -96,18 +97,24 @@ const Captura = () => {
 
   return (
     <>
-      <Navbar1 />
+      {/* <Navbar1 /> */}
 
       <div className="heroo swiper pag1cap">
         <div className="hero2 mx-auto px-4 sm:px-6 lg:px-8 md:px-7">
           <div className="lateralmente">
             <FadeInUpContainer>
               <div className="filhos fio1">
-                <img src={inglesemmedo} className="inglesemmedo" alt="Inglês sem medo" />
+                <img
+                  src={inglesemmedo}
+                  className="inglesemmedo"
+                  alt="Inglês sem medo"
+                />
 
                 <h1 className="text-white md:text-3xl sm:text-base">
-                  Vamos remover esse <span className="text-red-600">bloqueio</span> com o inglês
-                  num ambiente acolhedor e <span className="text-yellow-400">imersivo</span>
+                  Vamos remover esse{' '}
+                  <span className="text-red-600">bloqueio</span> com o inglês
+                  num ambiente acolhedor e{' '}
+                  <span className="text-yellow-400">imersivo</span>
                 </h1>
 
                 <h3 className="text-white xl:text-base md:text-sm sm:text-sm py-4">
@@ -158,7 +165,7 @@ const Captura = () => {
                         <ClipLoader color="white" size={24} />
                       ) : (
                         <>
-                          Começar agora{' '}
+                          INSCREVER-SE{' '}
                           <FontAwesomeIcon
                             id="icons"
                             className="site-form-item-icon text-yellow-500 text-2xl"
@@ -182,8 +189,8 @@ const Captura = () => {
 
       <section className="page2cap">
         <div className="titcap text-center">
-          <h3 className="text-white text-center md:text-3xl sm:text-base">
-            A projeto <span className="text-yellow-400">Inglês Sem Medo</span> é
+          <h3 className="text-white text-center md:text-3xl ">
+            O projeto <span className="text-yellow-400">Inglês Sem Medo</span> é
             para você que:
           </h3>
         </div>
@@ -235,14 +242,18 @@ const Captura = () => {
         <div className="heroo swiper">
           <div className="hero2 mx-auto px-4 sm:px-6 lg:px-8 md:px-7">
             <div className="ingles2">
-              <img src={inglesemmedo} className="inglesemmedo" alt="Inglês sem medo" />
+              <img
+                src={inglesemmedo}
+                className="inglesemmedo"
+                alt="Inglês sem medo"
+              />
             </div>
             <div className="lateralmente">
               <div className="filhos side side2">
                 <img src={souraul} className="souraul" alt="Raul" />
               </div>
               <FadeInUpContainer>
-                <div className="filhos fio1">
+                <div className="filhos fio1 fio2">
                   <h1 className="text-white md:text-3xl sm:text-base">
                     Quem é o Raul?
                   </h1>
@@ -270,8 +281,30 @@ const Captura = () => {
                   </h3>
                 </div>
               </FadeInUpContainer>
+
               <img src={fundo2} className="fundo2" alt="Background" />
             </div>
+            <form>
+              <button
+                className="text-white bg-green-600 rounded-2xl p-3 py-4 items-center w-full hover:scale-105 transition duration-300 ease-in-out hover:bg-blue-900 butt2"
+                type="submit"
+                style={{ backgroundColor: '#38a169', color: 'white' }}
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <ClipLoader color="white" size={24} />
+                ) : (
+                  <>
+                    INSCREVER-SE{' '}
+                    <FontAwesomeIcon
+                      id="icons"
+                      className="site-form-item-icon text-yellow-500 text-2xl"
+                      icon={faCheck}
+                    />
+                  </>
+                )}
+              </button>
+            </form>
           </div>
         </div>
       </div>

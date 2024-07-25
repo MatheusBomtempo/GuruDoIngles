@@ -1,3 +1,7 @@
+.pag1cap{
+    margin-top: 2rem;
+}
+
 .inglesemmedo{
     width:160px;
     margin-bottom: 1rem;
@@ -47,6 +51,10 @@
     width: 450px;
   }
 
+  .fio2{
+    text-align: justify;
+  }
+
   .side{
     width: 50%;
     display: flex;
@@ -71,12 +79,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 1rem;
     margin: 2rem 5rem;
 }
 
 .motivo {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
     color: white;
     background-color: #00113D;
     padding: 20px;
@@ -117,11 +128,20 @@
     font-size: 1rem;
 }
 
+.butt2{
+    width: 70%;
+    display: flex;
+    margin: 2rem auto 2rem auto;
+    justify-content: center;
+}
+
 @media (max-width: 1141px) {
     .pag3cap .lateralmente{
         flex-direction: column-reverse;
         gap: 2rem;
     }
+
+
 }
 
 /* Grade 2x2x2x2 para telas menores */
